@@ -28,27 +28,27 @@
               <div class="mb-3">
                 <input type="hidden" name="id" value="${voucher.voucherId}">
                 <label for="voucherName" class="form-label">Voucher name <span class="text-danger">*</span></label>
-                <input type="text" maxlength="200" class="form-control" id="voucherName" name="voucherName" placeholder=""
+                <input type="text" required="" maxlength="200" class="form-control" id="voucherName" name="voucherName" placeholder=""
                        value="${voucher.voucherName}">
-                <div class="form-text">Valid voucher name should not exceed 200 characters.</div>
+                <div class="form-text">Valid voucher name should not exceed 200 characters or blank.</div>
                 <div class="invalid-feedback">
                   Voucher name is invalid.
                 </div>
               </div>
               <div class="mb-3">
                 <label for="voucherCode" class="form-label">Voucher code <span class="text-danger">*</span></label>
-                <input type="text" maxlength="16" pattern="[a-zA-Z0-9]{16}" class="form-control" id="voucherCode" name="voucherCode" placeholder=""
+                <input type="text" required="" maxlength="16" pattern="[a-zA-Z0-9]{16}" class="form-control" id="voucherCode" name="voucherCode" placeholder=""
                        value="${voucher.voucherCode}">
-                <div class="form-text">Valid voucher code contains exactly 16 alphanumeric characters.</div>
+                <div class="form-text">Valid voucher code contains exactly 16 alphanumeric characters and not be blank.</div>
                 <div class="invalid-feedback">
                   Voucher code is invalid.
                 </div>
               </div>
               <div class="mb-3">
                 <label for="voucherPercent" class="form-label">Value (percentage) <span class="text-danger">*</span></label>
-                <input type="number" step="1" min="0" max="100" pattern="[0-9]{1,}" class="form-control" id="voucherPercent" name="voucherPercent"
+                <input type="number" required="" step="1" min="1" max="100" pattern="[0-9]{1,}" class="form-control" id="voucherPercent" name="voucherPercent"
                        placeholder="" value="${voucher.voucherPercent}">
-                <div class="form-text">Valid value should be an integer between 0 to 100.
+                <div class="form-text">Valid value should be an integer between 1 to 100.
                 </div>
                 <div class="invalid-feedback">
                   Value is not valid.
@@ -56,7 +56,7 @@
               </div>
               <div class="mb-3">
                 <label for="voucherQuantity" class="form-label">Quantity <span class="text-danger">*</span></label>
-                <input type="number" step="1" min="0" pattern="[0-9]{1,}" class="form-control" id="voucherQuantity" name="voucherQuantity"
+                <input type="number" required="" step="1" min="0" pattern="[0-9]{1,}" class="form-control" id="voucherQuantity" name="voucherQuantity"
                        placeholder="" value="${voucher.voucherQuantity}">
                 <div class="form-text">Valid quantity should be a non-negative integer.
                 </div>

@@ -56,20 +56,20 @@
               </div>
               <div class="mb-3">
                 <label for="firstName" class="form-label">First name <span class="text-danger">*</span></label>
-                <input type="text" maxlength="50" class="form-control" id="firstName" name="firstName" placeholder=""
+                <input type="text" required="" maxlength="50" class="form-control" id="firstName" name="firstName" placeholder=""
                        value="${user.firstName}">
                 <div class="form-text">Valid first name should not exceed 50 characters.</div>
                 <div class="invalid-feedback">
-                  Valid first name should not exceed 50 characters.
+                  Valid first name should not exceed 50 characters or blank.
                 </div>
               </div>
               <div class="mb-3">
                 <label for="lastName" class="form-label">Last name <span class="text-danger">*</span></label>
-                <input type="text" maxlength="50" class="form-control" id="lastName" name="lastName" placeholder=""
+                <input type="text" required="" maxlength="50" class="form-control" id="lastName" name="lastName" placeholder=""
                        value="${user.lastName}">
                 <div class="form-text">Valid last name should not exceed 50 characters.</div>
                 <div class="invalid-feedback">
-                  Valid last name should not exceed 50 characters.
+                  Valid last name should not exceed 50 characters or blank.
                 </div>
               </div>
               <div class="mb-3">

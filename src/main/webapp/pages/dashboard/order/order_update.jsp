@@ -37,27 +37,27 @@
               </div>
               <div class="mb-3">
                 <label for="firstName" class="form-label">First name <span class="text-danger">*</span></label>
-                <input type="text" maxlength="50" class="form-control" id="firstName" name="firstName" placeholder=""
+                <input type="text" required="" maxlength="50" class="form-control" id="firstName" name="firstName" placeholder=""
                        value="${order.firstName}">
                 <div class="form-text">Valid first name should not exceed 50 characters.</div>
                 <div class="invalid-feedback">
-                  Valid first name should not exceed 50 characters.
+                  Valid first name should not exceed 50 characters or blank.
                 </div>
               </div>
               <div class="mb-3">
                 <label for="lastName" class="form-label">Last name <span class="text-danger">*</span></label>
-                <input type="text" maxlength="50" class="form-control" id="lastName" name="lastName" placeholder=""
+                <input type="text" required="" maxlength="50" class="form-control" id="lastName" name="lastName" placeholder=""
                        value="${order.lastName}">
                 <div class="form-text">Valid last name should not exceed 50 characters.</div>
                 <div class="invalid-feedback">
-                  Valid last name should not exceed 50 characters.
+                  Valid last name should not exceed 50 characters or blank.
                 </div>
               </div>
               <div class="mb-3">
                 <label for="address" class="form-label">Address <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" maxlength="255" id="address" name="address"
+                <input type="text" required="" class="form-control" maxlength="255" id="address" name="address"
                        placeholder="" value="${order.address}">
-                <div class="form-text">Valid address should not exceed 255 characters.
+                <div class="form-text">Valid address should not exceed 255 characters or blank.
                 </div>
                 <div class="invalid-feedback">
                   Address should not exceed 255 characters.
@@ -65,9 +65,9 @@
               </div>
               <div class="mb-3">
                 <label for="phoneNumber" class="form-label">Phone number <span class="text-danger">*</span></label>
-                <input type="number" class="form-control" maxlength="10" pattern="[0]{1}\d{9}" id="phoneNumber" name="phoneNumber"
+                <input type="number" required="" class="form-control" maxlength="10" pattern="[0]{1}\d{9}" id="phoneNumber" name="phoneNumber"
                        placeholder="" value="${order.phoneNumber}">
-                <div class="form-text">Valid phone number starts with a 0 digit, and contains exactly 10 digits.
+                <div class="form-text">Valid phone number starts with a 0 digit, and contains exactly 10 digits. Can not be blank
                 </div>
                 <div class="invalid-feedback">
                   Phone number is not valid.
